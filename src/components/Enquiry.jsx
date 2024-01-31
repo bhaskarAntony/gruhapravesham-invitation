@@ -120,7 +120,7 @@ const Enquiry = () => {
 
       {step === 3 && (
          <div>
-         <h2>Hai <span className="text-warning">{formData.username}</span></h2>
+         <h2>Hi, <span className="text-warning">{formData.username}</span></h2>
          <p className="fs-6 text-secondary">Please fill your Basic Information</p>
          <label>
            Email
@@ -191,7 +191,7 @@ const Enquiry = () => {
       )}
        {step === 4 && (
          <div>
-         <h2>Hai <span className="text-warning">{formData.username}</span></h2>
+         <h2>Hi, <span className="text-warning">{formData.username}</span></h2>
          <p className="fs-6 text-secondary">Please fill your Basic Information</p>
         
                 <div className="">
@@ -242,6 +242,16 @@ const Enquiry = () => {
        <button onClick={handleNext} className='bg-warning btn text-white mt-3 w-100 fs-5'>Next</button>
        </div>
        </div>
+      )}
+         {step === 5 && (
+        
+        <div className='text-center'>
+        {/* <h1 className="fs-2">Submit Admission Form</h1> */}
+       
+       
+        <button onClick={handleNext} className='bg-warning btn text-white mt-3 w-100 fs-5 p-3 rounded-5'>Submit Form</button>
+        <button onClick={handlePrev} className='bg-dark btn text-white mt-3 w-100 fs-5 p-3 rounded-5'>Previous</button>
+        </div>
       )}
     </div>
         </div>
