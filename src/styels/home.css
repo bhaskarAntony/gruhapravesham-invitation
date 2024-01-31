@@ -1,0 +1,36 @@
+.register{
+   min-height: 100vh;
+   background-color: rgb(222, 223, 224);
+}
+.card{
+    background-color: #fff;
+}
+.card input{
+    padding: 15px !important;
+    border: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 20px;
+}
+.succsess-container{
+    background-color: rgb(233, 240, 246);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* loading  */
+.loader{
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000069;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card label{
+    color: #3e3e3e !important;
+}
