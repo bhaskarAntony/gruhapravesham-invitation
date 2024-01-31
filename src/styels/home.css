@@ -34,3 +34,7 @@
 .card label{
     color: #3e3e3e !important;
 }
+.first{
+    min-height: 100vh;
+    text-align: center;
+}
