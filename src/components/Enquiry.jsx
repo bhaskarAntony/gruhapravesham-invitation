@@ -10,8 +10,10 @@ const Enquiry = () => {
     dob:"",
     address:"",
     Gmobile:"",
-    mobile:""
-    
+    mobile:"",
+    qualification:"",
+    passing:"",
+    course:""
   });
 
   const handleChange = (e) => {
@@ -46,7 +48,7 @@ const Enquiry = () => {
         <div>
       {step === 1 && (
         <div>
-          <h2>Step 1: Basic Information</h2>
+          <h2>may i know your information</h2>
           <label>
             Username:
            
@@ -96,7 +98,7 @@ const Enquiry = () => {
 
       {step === 2 && (
      <div>
-     <h2>Hello👋, {formData.username}</h2>
+     <h2>Hello👋, <spam className="text-warning">{formData.username}</spam></h2>
      <p className="fs-6 text-secondary">May i Know your Address</p>
 
       <label htmlFor="" className="form-label w-100  mt-3">
@@ -181,6 +183,60 @@ const Enquiry = () => {
              />
               </label>
              </div>
+       <div className="text-center d-flex gap-3 flex-wrap flex-md-nowrap">
+       <button onClick={handlePrev} className='bg-dark btn text-white mt-3 w-100 fs-5'>Previous</button>
+       <button onClick={handleNext} className='bg-warning btn text-white mt-3 w-100 fs-5'>Next</button>
+       </div>
+       </div>
+      )}
+       {step === 4 && (
+         <div>
+         <h2>Hai <span className="text-warning">{formData.username}</span></h2>
+         <p className="fs-6 text-secondary">Please fill your Basic Information</p>
+        
+                <div className="">
+            
+                <label className='w-100'>
+           Course Intrested in
+           <select
+         name="course"
+         value={formData.course}
+         onChange={handleChange}
+         className='form-control'
+        >
+
+            <option value="" disabled selected>Course</option>
+            <option value="">Mern Fullstack</option>
+            <option value="">Mean Fullstack</option>
+            <option value="">Java Fullstack</option>
+            <option value="">Python Fullstack</option>
+            <option value="">Digital marketing</option>
+            <option value="">Data Science</option>
+            <option value="">Cloud Oops</option>
+        </select>
+         </label> <br />
+      
+        <label className='w-100'>
+           Proffesional details
+           <select
+         name="course"
+         value={formData.course}
+         onChange={handleChange}
+         className='form-control'
+        >
+
+            <option value="" disabled selected>Details</option>
+            <option value="">Employed</option>
+            <option value="">Unemployed</option>
+            <option value="">Self Employed</option>
+            <option value="">Student</option>
+            
+        </select>
+          
+         </label> <br />
+      
+             </div>
+           
        <div className="text-center d-flex gap-3 flex-wrap flex-md-nowrap">
        <button onClick={handlePrev} className='bg-dark btn text-white mt-3 w-100 fs-5'>Previous</button>
        <button onClick={handleNext} className='bg-warning btn text-white mt-3 w-100 fs-5'>Next</button>
