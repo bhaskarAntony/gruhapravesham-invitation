@@ -38,3 +38,18 @@
     min-height: 100vh;
     text-align: center;
 }
+
+
+.enquiry-right input, .enquiry-right select{
+    padding: 15px;
+    border: none;
+    border: 1px solid #979797;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.enquiry{
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
