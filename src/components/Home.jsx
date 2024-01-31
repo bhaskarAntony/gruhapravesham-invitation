@@ -28,7 +28,7 @@ function Home() {
 
     try {
       // Replace 'YOUR_API_ENDPOINT' with the actual endpoint of your API
-      const response = await axios.post('http://localhost:3200/api/enquiry', formData);
+      const response = await axios.post('https://stormy-flannel-nightgown-ox.cyclic.app/api/enquiry', formData);
 
       // Handle the response, e.g., show a success message
       console.log('Response:', response.data);
