@@ -48,7 +48,7 @@ const Enquiry = () => {
         <div>
       {step === 1 && (
         <div>
-          <h2>may i know your information</h2>
+          <h2>May i know your information</h2>
           <label>
             Username:
            
