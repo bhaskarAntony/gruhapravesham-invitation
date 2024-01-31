@@ -249,7 +249,7 @@ const Enquiry = () => {
         {/* <h1 className="fs-2">Submit Admission Form</h1> */}
        
        
-        <button onClick={handleNext} className='bg-warning btn text-white mt-3 w-100 fs-5 p-3 rounded-5'>Submit Form</button>
+        <button className='bg-warning btn text-white mt-3 w-100 fs-5 p-3 rounded-5'>Submit Form</button>
         <button onClick={handlePrev} className='bg-dark btn text-white mt-3 w-100 fs-5 p-3 rounded-5'>Previous</button>
         </div>
       )}
