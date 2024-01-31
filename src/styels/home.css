@@ -37,7 +37,14 @@
 .first{
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.first h1{
+    word-break: keep-all;
+}
+
 
 
 .enquiry-right input, .enquiry-right select{
@@ -67,4 +74,5 @@
 .landing button{
     min-width: 200px;
     margin: 20px;
+
 }
