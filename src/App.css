@@ -1,187 +1,119 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: 'Arial', sans-serif;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  background-color: rgb(12, 12, 12);
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
+
+.i{
+  font-family: "Gwendolyn", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
-ul{
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  align-items: center;
+
+.header {
+  background-color: #ffcc00;
+  color: white;
+  padding: 20px 0;
 }
-nav h1{
-  font-size: 3em;
-  color: rgb(232, 14, 39);
-}
-nav ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: 1s;
-}
-nav ul li a:hover{
-  transform: scale(1.2);
-  color: #df0626;
-}
-nav ul li button{
-  border: none;
-  padding: 10px;
-  font-size: 1.2em;
-  color: #fff;
-  background:linear-gradient(45deg, #f3070f, #ec3859);
-  border-radius: 5px;
-}
-nav ul li button:hover{
-  background: #fcfcfc2d;
-}
-.main-text{
-  color: #fff;
-}
-.home{
-  min-height: 100vh;
-  background: url(https://www.justwatch.com/appassets/img/home/global-home-bg-comp.png) no-repeat center;
+
+.MainBanner {
+  /* background-image: url('path_to_banner_image.jpg'); */
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
+  background-position: center;
+  color: white;
+  position: relative;
 }
-.home h1{
-  font-size: 4em;
-}
-.btns{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-  padding-top: 30px;
-}
-.home button{
-  border:0;
-  padding: 20px 30px;
-  font-size: 1.3em;
-  color: #fff;
-  background: linear-gradient(45deg, #df0626, #fa405c);
-  border-radius: 5px;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.home button:hover{
-  transform: translate(10px);
-}
-.home button:nth-child(2){
-  background: rgba(240, 248, 255, 0.186);
-  backdrop-filter: blur(10px);
-}
-.home h3{
-  font-weight: 400;
-  color: #f6b2bc;
-}
-.footer-text{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 10px;
-}
-.footer{
-  background: #000;
-  /* text-align: center; */
-  color: #ffff;
-  padding: 5%;
-}
-.footer-child{
-    min-height: 300px;
-    background: url(https://www.justwatch.com/images/backdrop/305224208/s1440/.webp) no-repeat center;
-    background-size: cover;
-    border-radius: 30px;
-    overflow: hidden;
-    transition: 1s;
-}
-.footer-child:hover{
-  transform: scale(0.9);
-}
-.footer-child h1{
-  font-size: 3em;
-}
-.footer-blur{
-  backdrop-filter: blur(10px);
+
+.Banner-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2em;
+  height: 100%;
+  background: linear-gradient(#00000014, #000);
 }
-.footer-header{
+
+
+
+.timeline-item{
+  padding: 30px;
+  min-height: 200px;
+  background-color: #fff;
+  
+  /* backdrop-filter: blur(10px); */
+  border: 5px solid #ffde73;
+  color: #fff94b;
+  background-size: cover;
+  background-color: #000000 !important;
+}
+.timeline-item span:nth-child(1){
+  color: #ffe600;
+}
+.date{
+  padding: 50px;
+  /* border: 2px solid #000; */
+  min-height: 350px;
+  height: 100%;
+  background: url(https://static.vecteezy.com/system/resources/previews/023/932/396/original/gold-corner-art-asian-buddhism-temple-file-for-decoration-png.png) no-repeat center bottom;
+  background-size:100%;
+  box-shadow: 0px 0px 10px #020000;
+  font-weight: bold;
+  /* border: 2px solid #89620078; */
+  background-color: #6d363c;
+  color: #fce492;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.col-md-4{
   margin-bottom: 20px;
 }
-.category-container{
-  display: flex;
-  gap: 20px;
-  padding: 5%;
-  background-color: #000;
+.display-10{
+  font-size: 5rem;
 }
-.category1, .category2{
-  flex: 1;
-  min-height: 400px;
-  background-size: cover;
-  overflow: hidden;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 1.2em;
 
+
+
+
+.Footer {
+  background-color: #000000;
+  color: white;
 }
-.category1 h1, .category2 h1{
-  font-size: 3em;
-  color: #000;
+
+.Footer .SocialMedia a {
+  margin: 0 10px;
+  color: white;
 }
-.category-container button{
-  outline: none;
-  border: none;
-  padding: 20px 10%;
-  font-size: 1.3em;
-  color: #0a0a0a;
-  background: linear-gradient(45deg, #000000, #232020);
-  background: #fff;
-  width: fit-content;
-  border-radius: 100px;
-  margin-left: -40px;
-  margin-bottom: -20px;
-  transition: 1s;
-  cursor: pointer;
+
+
+.MainBanner video{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
 }
-.category-container button:hover{
-  margin-bottom: 0;
-  margin-left: 0px;
+
+.bg{
+  background: url(https://img.freepik.com/premium-vector/seamless-wallpaper-vector-illustration_389737-51.jpg) center;
+  min-height: 30px;
+  /* background-size: cover; */
 }
-.category1{
-  background: url(https://www.justwatch.com/images/backdrop/306097044/s1440/.webp) no-repeat center;
+
+.bg2{
+  background: url(https://png.pngtree.com/png-vector/20240115/ourmid/pngtree-chinese-new-year-chinese-new-year-frame-decoration-vector-png-image_11436876.png) center top;
+  min-height: 100px;
+  /* background-size: cover; */
 }
-.category2{
-  background: url(https://www.justwatch.com/images/backdrop/162398451/s1440/.webp) no-repeat center;
+
+.Schedule{
+  background: url(https://img.freepik.com/free-vector/elegant-background-red-gold_1048-12306.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1717804800&semt=ais_user) center top;
+  /* background-size: cover; */
 }
-.blur{
-  backdrop-filter: blur(10px);
-  height: 100%;
-  padding: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+.App{
+  background-color: #3b0000;
 }
-.category{
-  background-color: #000;
-  color: #fff;
-  padding: 10%;
+.thanks{
+  /* width: 200px; */
+  margin: auto;
+  display: block;
 }
-ul li .link{
-  text-decoration: none;
-}
+
