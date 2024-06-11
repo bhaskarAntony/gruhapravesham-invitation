@@ -112,8 +112,13 @@ body {
   background-color: #3b0000;
 }
 .thanks{
-  /* width: 200px; */
+  width: 200px;
   margin: auto;
   display: block;
+}
+@media (max-width:768px){
+  .MainBanner video{
+    height: 80vh;
+  }
 }
 
