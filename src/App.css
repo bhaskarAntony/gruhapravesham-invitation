@@ -118,7 +118,7 @@ body {
 }
 @media (max-width:768px){
   .MainBanner video{
-    height: 80vh;
+    height: 70vh;
   }
 }
 
