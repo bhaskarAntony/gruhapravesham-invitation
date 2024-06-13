@@ -24,10 +24,10 @@ function App() {
       <Schedule />
       {/* <RSVP /> */}
       
-      <div className='map p-3 p-md-5' data-aos="fade-down">
+      <div className='map p-5' data-aos="fade-down">
         <h1 className='display-1 i text-center text-white'>Location</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3889.3545890072046!2d77.63217347507495!3d12.884905987422584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDUzJzA1LjciTiA3N8KwMzgnMDUuMSJF!5e0!3m2!1sen!2sin!4v1718251563751!5m2!1sen!2sin" width="600" className='w-100 rounded-4' height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+        
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3889.3545890072046!2d77.63217347507495!3d12.884905987422584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDUzJzA1LjciTiA3N8KwMzgnMDUuMSJF!5e0!3m2!1sen!2sin!4v1718251563751!5m2!1sen!2sin" width="600" height="450" className='w-100 rounded-4' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div className='bg'></div>
